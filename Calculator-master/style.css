@@ -1,0 +1,168 @@
+html, body {
+    height: 100%;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav svg {
+    position: absolute;
+    bottom: 10px; right: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+#container {
+    position: absolute;
+    height: 40%;
+    top: 50%;left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+#calc {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+
+    overflow: hidden;
+    font-size: 20px;
+
+    height: 100%;
+
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 300px;
+    max-height: 300px;
+
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.5s linear;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.inputs div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 5px;
+}
+
+.inputs input {
+    width: 90%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    font-size: 20px;
+
+    padding: 5px;
+}
+
+.inputs input:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.inputs svg {
+    width: 10%;
+    cursor: pointer;
+
+    transition: 500ms;
+}
+
+#button {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+}
+
+#button div {
+    display: flex;
+}
+
+#button div input {
+    width: 24%;
+    height: 50px;     
+    margin: 1px;
+
+    font-weight: bold;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.85);
+
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(50, 50, 50, 0.2);
+}
+
+#button div input:focus {
+    background-color: rgba(50, 50, 50, 0.4);
+    outline: none;
+}
+
+#target {
+    width: 45px;
+    height: 45px;
+    margin-top: 8px;
+    transition: 0.3s linear;
+}
+
+/* animações layout */
+
+.calcClose {
+    min-height: 75px!important;
+    height: 10%!important;
+}
+
+.targetClose {
+    transform: rotate(180deg)!important;
+}
+
+.error {
+    animation: error 500ms;
+}
+
+@keyframes error {
+    0% {
+        transform: translateX(0);
+    }25% {
+        transform: translateX(2%);
+    }50% {
+        transform: translateX(-2%);
+    }75% {
+        transform: translateX(2%);
+    }100% {
+        transform: translateX(0%);
+    }
+}
+
+.rgb {
+    animation: RGB 1.5s infinite;
+}
+@keyframes RGB {
+    0% {
+        color: rgb(255, 38, 0);
+    }25% {
+        color: rgb(255, 238, 0);
+    }50% {
+        color: rgb(30, 255, 0);
+    }75% {
+        color: rgb(0, 255, 221);
+    }100% {
+        color: rgb(255, 0, 242);
+    }
+}

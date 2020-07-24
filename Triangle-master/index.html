@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>Triangle</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Bem-Vindo !!!</h1>
+        <h2>Verificador de formato de triângulo.</h2>
+    </header>
+
+    <div id="content">
+        <h3 id="result">Resultado</h3>
+        <input maxlength="2" id="sideLeft" type="text" placeholder="Left">
+        <input maxlength="2" id="sideRight" type="text" placeholder="Right">
+        <input maxlength="2" id="base" type="text" placeholder="Base">
+        <div id="triangle"></div>
+        <p id="message">Preencha todo os campos</p>
+    </div>
+
+    <div id="commit">
+        <p>
+            Valor limite: 75cm.<br />
+            Valores discrepantes o formato não sera 100% correto.
+        </p>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

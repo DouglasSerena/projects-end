@@ -1,0 +1,75 @@
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    resize: none;
+}
+.header {
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    display: flex;
+    max-height: 50px;
+    min-height: 50px;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+#primary {
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: 1000ms;
+    width: 30%;
+}
+#secondary {
+    background-color: white;
+    border-left: 1px solid gray;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 70%;
+}
+@media (max-width: 720px) {
+    #primary {
+        padding: 0;
+        width: 100%;
+    }
+    #secondary {
+        animation: right 1s;
+        padding: 0;
+        right: -100%;
+        transition: 1000ms;
+        width: 100%;
+    }
+    .left {
+        animation: left 1s;
+        transform: translateX(-100%);
+    }
+    @keyframes left {
+        from {
+            transform: translateX(0);
+        } to {
+            transform: translateX(-100%);
+        }
+    }
+    @keyframes right {
+        from {
+            transform: translateX(100%);
+        } to {
+            transform: translateX(0%);
+        }
+    }
+}

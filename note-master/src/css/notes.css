@@ -1,0 +1,50 @@
+#firstTitle {
+    border-radius: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.8);
+    margin-right: 10px;
+    padding: 5px;
+    width: 100%;
+}
+#add {
+    background: url(./../svgs/plus-square-regular.svg) center no-repeat;
+    border: none;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+}
+#add:focus {
+    outline: none;
+}
+#note {
+    align-items: center;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    transition: 500ms;
+    width: 100%;
+}
+#checked {
+    margin-right: 5px;
+    width: 5%;
+}
+
+#note p  {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 90%;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.active {
+    background-color: lightblue;
+}

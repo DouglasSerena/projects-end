@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%
+}
+body {
+    background: url(./assets/banner.jpg) center no-repeat;
+    background-size: cover;
+    height: 100%;
+
+    font-family: Orbitron, sans-serif;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+}
+
+#panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#panel div {
+    font-size: 100px;
+    font-weight: 500;
+}
+#panel .frame {
+    width: 100px;
+    height: 150px;
+
+    margin: 2px;
+
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+@media (max-width: 650px) {
+    #panel {
+        width: 90%;
+        height: 50px;
+    }
+    #panel div {
+        font-size: 40px;
+    }
+    #panel .frame {
+        width: 100px;
+        height: 50px;
+    }
+}

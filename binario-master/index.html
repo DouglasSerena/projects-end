@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINARIO</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- estilo propio -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- icons w3school -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <h1 class="navbar-brand">Binario</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link btn-light btn" href="#numero">Conversor</a>
+                    <a class="nav-item nav-link" target="back" href="https://github.com/DouglasSerena"><i class="fa fa-github mr-2"></i>GitHub</a>
+                    <a class="nav-item nav-link" target="back" href="https://www.linkedin.com/in/douglas-serena-44ab721a0/"><i class="fa fa-linkedin-square mr-2"></i>Linkedin</a>
+                    <a class="nav-item nav-link" target="back" href="https://www.instagram.com/douglas_serena/"><i class="fa fa-instagram mr-2"></i>Instagram</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="tamanho">
+        <div class="bgImage"></div>
+        <div class="container bootsrapInfo text-white">
+            <h2 class="h3">Trabalho Feito Com bootstrap</h2>
+            <p>Caso queira conhecer mais sobre o Framework</p>
+            <a href="https://getbootstrap.com/" target="back" class="btn btn-info">Clique-me</a>
+        </div>
+    </section>
+
+    <!-- converte -->
+
+    <main class="row container m-0 m-auto">
+        <div class="col-sm-6">
+            <h2 class="text-center">Conversor Bases</h2>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label for="numero" class="input-group-text">Valor</label>
+                </div>
+                <select class="custom-select" id="numero">
+                    <option value="2" selected>Binario</option>
+                    <option value="8">Octal</option>
+                    <option value="10">Decimal</option>
+                    <option value="16">Hexadecimal</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label for="resultante" class="input-group-text">Valor resultante</label>
+                </div>
+                <select class="custom-select" id="resultante">
+                    <option value="2">Binario</option>
+                    <option value="8">Octal</option>
+                    <option value="10" selected>Decimal</option>
+                    <option value="16">Hexadecimal</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <div class="input-group-append">
+                    <label for="valor1" class="input-group-text">Valor</label>
+                </div>
+                <input class="form-control" type="text" id="valor1" placeholder="Valor" onkeyup="Converter();this.value = this.value.toUpperCase();" onkeypress="if (event.keyCode == 13){Converter()};">
+            </div>
+            <div class="input-group">
+                <div class="input-group-append">
+                    <label for="Resultado1" class="input-group-text">Resultado</label>
+                </div>
+                <input class="form-control" type="text" id="Resultado1" placeholder="Resultado" disabled>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <h2 class="text-center">Calculador Bases</h2>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label for="formato" class="input-group-text">Formato</label>
+                </div>
+                <select class="custom-select" id="formato">
+                    <option value="2">Binario</option>
+                    <option value="8">Octal</option>
+                    <option value="10">Decimal</option>
+                    <option value="16">Hexadecimal</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label for="operacao" class="input-group-text">operação</label>
+                </div>
+                <select class="custom-select" id="operacao">
+                    <option value="1">Soma</option>
+                    <option value="2">Divisão</option>
+                    <option value="3">Subtração</option>
+                    <option value="4">Multiplicação</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <input class="form-control" type="text" id="valor2" placeholder="Valor" onkeyup="Operacao();this.value = this.value.toUpperCase();" onkeypress="if (event.keyCode == 13){Operacao()};">
+                <div class="input-group-append">
+                    <label for="valor2" class="input-group-text" id="sinal">+</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <input class="form-control" type="text" id="valor3" placeholder="Valor" onkeyup="Operacao();this.value = this.value.toUpperCase();" onkeypress="if (event.keyCode == 13){Operacao()};">
+                <div class="input-group-append">
+                    <label for="valor3" class="input-group-text">=</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-group-append">
+                    <label for="Resultado2" class="input-group-text">Resultado</label>
+                </div>
+                <input class="form-control" type="text" id="Resultado2" placeholder="Resultado" disabled>
+            </div>
+        </div>
+
+        <div class="col-sm-6 mt-2">
+            <textarea id="block" class="form-control w-100 h-100" placeholder="salvar resultados"></textarea>
+        </div>
+
+        <div class="col-sm-6">
+            <h2 class="text-center">Lógica Binária</h2>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="countTwo">
+                <label class="custom-control-label" for="countTwo">Duas letras</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="resultNegative">
+                <label class="custom-control-label" for="resultNegative">XOR no resultado final</label>
+            </div>
+            <div class="input-group">
+                <div class="input-group-append">
+                    <label for="form" class="input-group-text">EX ( !A . !B )</label>
+                </div>
+                <input class="form-control" type="text" id="form" placeholder="!A . !B" onkeyup="this.value = this.value.toUpperCase();" onkeypress="if (event.keyCode == 13){logic()};">
+            </div>
+            <div class="input-group">
+                <div class="input-group-append">
+                    <label for="result" class="input-group-text">Resultado</label>
+                </div>
+                <input class="form-control" type="text" id="result" placeholder="Resultado" disabled>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="card p-0 mt-4 bg-dark">
+        <div class="card-body text-center text-white">
+          <address class="card-text size-text">
+            Dev: Douglas Serena<br/>
+            Whats: (51) 9 9323-4701<br/>
+            Email: douglas222serena@rede.ulbra.br
+          </address>
+          <p class="m-0">&copy; Copyright 2020</p>
+        </div>
+      </footer>    
+
+
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+    <!-- script propio -->
+    <script src="./js/script.js"></script>
+    <!-- bootstrap -->
+    <script src="./js/bootstrap.js"></script>
+    <!-- funcionalidades -->
+    <script src="./js/operacao.js"></script>
+    <!-- logica -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

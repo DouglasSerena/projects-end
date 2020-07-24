@@ -1,0 +1,47 @@
+#content {
+    align-items: center;
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    padding: 20px;
+}
+#contentArea {
+    border: none;
+    font-size: 18px;
+    height: 100%;
+    max-width: 720px;
+    overflow-x: hidden;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+}
+#title {
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+#back {
+    display: none;
+}
+#back:focus {
+    outline: none;
+}
+#remove {
+    background: url(./../svgs/trash-alt-regular.svg) center no-repeat;
+    border: none;
+    height: 32px;
+    width: 32px;
+}
+#remove:focus {
+    outline: none;
+}
+@media (max-width: 720px) {
+    #back {
+        background: url(./../svgs/arrow-left-solid.svg) center no-repeat;
+        border: none;
+        display: block;
+        height: 32px;
+        width: 32px;
+    }
+}
