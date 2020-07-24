@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Clock</title>
+</head>
+<body>
+    <div class="clock">
+        <span class="pointer"></span>
+        <span class="hr"></span>
+        <span class="min"></span>
+        <span class="sec"></span>
+        <span class="three">3</span>
+        <span class="six">6</span>
+        <span class="nine">9</span>
+        <span class="twelve">12</span>
+    </div>
+    <script>
+        const $ = document.querySelector.bind(document)
+        const deg = 6;
+        setInterval(() => {
+            const date = new Date();
+            $('.hr').style.transform = `rotateZ(${date.getHours() * 30}deg)`
+            $('.min').style.transform = `rotateZ(${date.getMinutes() * deg}deg)`
+            $('.sec').style.transform = `rotateZ(${date.getSeconds() * deg}deg)`
+        }, 1000);
+    </script>
+</body>
+</html>
