@@ -1,11 +1,11 @@
-<h1 align="center">Calculator</h1>
+<h1 align="center">Clock</h1>
 
 <p align="center">
     <img src="https://img.shields.io/badge/language-JavaScript-yellow"/>
     <img src="https://img.shields.io/badge/language-HTML-red"/>
     <img src="https://img.shields.io/badge/language-css-blue"/>
 </p>
-<p align="center">Este projeto foi feito para o uso de javascript e bootstrap para o estilo</p>
+<p align="center">Nesta pasta possui duas paginas um com um relógio analógico e um digital feito com javascript.<p>
 
 ### Execução
 
@@ -13,14 +13,16 @@
 
 ```sh
   git clone https://github.com/DouglasSerena/DouglasSerena.git
-  cd binario
+  cd clock
+  cd analog ou digital
   Abra o index.html
 ```
 
 ### Desenvolvimento
 
-<p>Projeto esta usando bootstrap para estilizar que seria um requisito de um atividade da faculdade, e os conversores de base foi usado o a função toString para fazer a conversão das base.</p>
+<p>Projeto feito com a class Date do javascript para pegar a data atual do Computador e setInterval para fazer as horas atualizar automaticamente sem o recarregamento da pagina.</p>
 
 ### Links
 
-- [calculator](http://douglasserena.github.io/simplas-pages/binario)
+- [analog](http://douglasserena.github.io/simplas-pages/clock/analog)
+- [digital](http://douglasserena.github.io/simplas-pages/clock/digital)
