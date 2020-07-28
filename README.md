@@ -1,71 +1,26 @@
 <h1 align="center">Simplas pages</h1>
 
 <p align="center">
-  Este repositorio esta destinado a guardar todos os projetos de paginas unica.
+    <img src="https://img.shields.io/badge/language-JavaScript-yellow"/>
+    <img src="https://img.shields.io/badge/language-HTML-red"/>
+    <img src="https://img.shields.io/badge/language-css-blue"/>
 </p>
+<p align="center">Este rerpositório esta sendo usado para alocar todos os minhas paginas simples de single page</p>
 
-<h4 align="center">Clock</h4>
+### Execução
 
-<h6 align="center"> Este projeto possui dois modelos um relogio digital e outro analogico</h6>
+<p>Para executar esse projeto você vai precisar somente do navegador, Para visualizar o codigo das paginas siga os comandos abaixo.</p>
 
-<p align="center">
-  <img src="./clock/digital/index.png" width="500px">
-</p>
-<p align="center">
-  <img src="./clock/analog/index.png" width="500px">
-</p>
+```sh
+  git clone https://github.com/DouglasSerena/DouglasSerena.git
+```
 
-<p align="center">
-<a href="https://douglasserena.github.io/simplas-pages/clock/analog/">Analog</a> -
-<a href="https://douglasserena.github.io/simplas-pages/clock/digital/">Digital</a>
-</p>
+### Links
 
-<h4 align="center">Fire Doom</h4>
-
-<p align="center">
-  <img src="./FireDoom/index.png" width="500px">
-</p>
-
-<p align="center">
-<a href="https://douglasserena.github.io/simplas-pages/FireDoom">Fire Doom</a>
-</p>
-
-<h4 align="center">Calculator</h4>
-
-<p align="center">
-  <img src="./calculator/index.png" width="500px">
-</p>
-
-<p align="center">
-<a href="https://douglasserena.github.io/simplas-pages/calculator">Calculator</a>
-</p>
-
-<h4 align="center">Triangle</h4>
-
-<p align="center">
-  <img src="./triangle/index.png" width="500px">
-</p>
-
-<p align="center">
-<a href="https://douglasserena.github.io/simplas-pages/triangle">Triangle</a>
-</p>
-
-<h4 align="center">Note</h4>
-
-<p align="center">
-  <img src="./note/index.png" width="500px">
-</p>
-
-<p align="center">
-<a href="https://douglasserena.github.io/simplas-pages/note">Note</a>
-</p>
-
-<h4 align="center">Binario</h4>
-
-<p align="center">
-  <img src="./binario/index.png" width="500px">
-</p>
-
-<p align="center">
-<a href="https://douglasserena.github.io/simplas-pages/binario">Binario</a>
-</p>
+- [clock analog](http://douglasserena.github.io/simplas-pages/clock/analog)
+- [clock digital](http://douglasserena.github.io/simplas-pages/clock/digital)
+- [Fire Doom](http://douglasserena.github.io/simplas-pages/FireDoom)
+- [Calculator](http://douglasserena.github.io/simplas-pages/calculator)
+- [Triangle](http://douglasserena.github.io/simplas-/triangle)
+- [Binario](http://douglasserena.github.io/simplas-pages/binario)
+- [Note](http://douglasserena.github.io/simplas-pages/note)
